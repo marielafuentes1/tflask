@@ -4,8 +4,9 @@ DROP TABLE IF EXISTS post;
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
-  password TEXT NOT NULL
-  verif_password TEXT NOT NULL
+  password TEXT NOT NULL,
+  verif_password TEXT NOT NULL,
+  email TEXT UNIQUE  NOT NULL
 );
 
 CREATE TABLE post (
