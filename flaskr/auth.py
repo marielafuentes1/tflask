@@ -14,6 +14,7 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        verif_password = request.form['verif_password']
         db = get_db()
         error = None
 
